@@ -8,9 +8,9 @@ require  'vendor/autoload.php';
 $app = new Slim\App();
 
 $app->get('/', function (Request $request, Response $response, array $args) {
-    
-    $response->getBody()->write("Hello");
-    return $response;
+    include('home.php');
+    //$response->getBody()->write("Hello");
+    //return $response;
 });
 
 $app->run();
